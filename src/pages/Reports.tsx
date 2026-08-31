@@ -9,6 +9,7 @@ import { formatCurrency } from '@/lib/format'
 import { inventory } from '@/data/inventory'
 import { productById, products } from '@/data/products'
 import { inventoryRiskByStore, deadInventoryRows } from '@/data/analytics'
+import { StorewideProfitChart } from '@/components/reports/StorewideProfitChart'
 
 const categories = Array.from(new Set(products.map((p) => p.category)))
 
@@ -39,6 +40,8 @@ export default function Reports() {
         <h1 className="text-2xl font-semibold tracking-tight">Reports</h1>
         <p className="text-sm text-muted-foreground">Scheduled and on-demand reporting across inventory, vendors, and cash flow</p>
       </div>
+
+      <StorewideProfitChart />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <Card>
@@ -71,8 +74,8 @@ export default function Reports() {
 
         <Card>
           <CardHeader>
-            <CardTitle>Store Comparison</CardTitle>
-            <CardDescription>Inventory value and open risk by location</CardDescription>
+            <CardTitle>Inventory Value &amp; Risk by Store</CardTitle>
+            <CardDescription>Open AI decisions and cash on hand by location</CardDescription>
           </CardHeader>
           <CardContent className="px-0">
             <Table>
