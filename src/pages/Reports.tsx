@@ -10,6 +10,7 @@ import { inventory } from '@/data/inventory'
 import { productById, products } from '@/data/products'
 import { inventoryRiskByStore, deadInventoryRows } from '@/data/analytics'
 import { StorewideProfitChart } from '@/components/reports/StorewideProfitChart'
+import { DepartmentProfitForecasts } from '@/components/reports/DepartmentProfitForecasts'
 
 const categories = Array.from(new Set(products.map((p) => p.category)))
 
@@ -42,6 +43,8 @@ export default function Reports() {
       </div>
 
       <StorewideProfitChart />
+
+      <DepartmentProfitForecasts />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <Card>
