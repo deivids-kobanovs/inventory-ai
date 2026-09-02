@@ -9,9 +9,8 @@ import AiDecisions from '@/pages/AiDecisions'
 import Inventory from '@/pages/Inventory'
 import Transfers from '@/pages/Transfers'
 import PurchaseOrders from '@/pages/PurchaseOrders'
-import Forecasting from '@/pages/Forecasting'
 import Vendors from '@/pages/Vendors'
-import Reports from '@/pages/Reports'
+import Projections from '@/pages/Projections'
 import Settings from '@/pages/Settings'
 
 function App() {
@@ -26,9 +25,8 @@ function App() {
               <Route path="/inventory" element={<Inventory />} />
               <Route path="/transfers" element={<Transfers />} />
               <Route path="/purchase-orders" element={<PurchaseOrders />} />
-              <Route path="/forecasting" element={<Forecasting />} />
               <Route path="/vendors" element={<Vendors />} />
-              <Route path="/reports" element={<Reports />} />
+              <Route path="/projections" element={<Projections />} />
               <Route path="/settings" element={<Settings />} />
             </Route>
           </Routes>

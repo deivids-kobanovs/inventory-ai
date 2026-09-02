@@ -7,7 +7,6 @@ import {
   ClipboardList,
   LineChart,
   Truck,
-  BarChart3,
   Settings,
   Warehouse,
 } from 'lucide-react'
@@ -20,9 +19,8 @@ const nav = [
   { to: '/inventory', label: 'Inventory', icon: Boxes },
   { to: '/transfers', label: 'Transfers', icon: ArrowLeftRight },
   { to: '/purchase-orders', label: 'Purchase Orders', icon: ClipboardList },
-  { to: '/forecasting', label: 'Forecasting', icon: LineChart },
   { to: '/vendors', label: 'Vendors', icon: Truck },
-  { to: '/reports', label: 'Reports', icon: BarChart3 },
+  { to: '/projections', label: 'Projections', icon: LineChart },
   { to: '/settings', label: 'Settings', icon: Settings },
 ]
 

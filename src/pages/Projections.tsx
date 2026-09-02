@@ -21,7 +21,7 @@ const savedReports = [
   { title: 'Cash Tied Up in Inventory', description: 'Overstock and dead-stock cash exposure with release recommendations', lastRun: 'Aug 31, 2026' },
 ]
 
-export default function Reports() {
+export default function Projections() {
   const categoryValue = useMemo(
     () =>
       categories
@@ -38,8 +38,8 @@ export default function Reports() {
   return (
     <div className="flex flex-col gap-6">
       <div className="flex flex-col gap-1">
-        <h1 className="text-2xl font-semibold tracking-tight">Reports</h1>
-        <p className="text-sm text-muted-foreground">Scheduled and on-demand reporting across inventory, vendors, and cash flow</p>
+        <h1 className="text-2xl font-semibold tracking-tight">Projections</h1>
+        <p className="text-sm text-muted-foreground">Profit forecasts, inventory trends, and on-demand reporting across the business</p>
       </div>
 
       <StorewideProfitChart />
